@@ -23,7 +23,7 @@ const InvoiceForm = ({ onInvoiceSaved, onCancel, editData }) => {
 
   useEffect(() => {
     // Localhost ko hata kar Render ki URL link laga di hai
-    fetch('https://extraeffort-9i4m.onrender.com/api/customers/all')
+    fetch('https://nishuu.onrender.com/api/customers/all')
       .then(res => res.json())
       .then(data => setCustomers(data))
       .catch(err => console.error(err));
@@ -62,8 +62,8 @@ const InvoiceForm = ({ onInvoiceSaved, onCancel, editData }) => {
     
     // Yahan conditional link mapping update kar di hai
     const url = editData 
-      ? `https://extraeffort-9i4m.onrender.com/api/invoices/${editData._id}`
-      : 'https://extraeffort-9i4m.onrender.com/api/invoices/add';
+      ? `https://nishuu.onrender.com/api/invoices/${editData._id}`
+      : 'https://nishuu.onrender.com/api/invoices/add';
     const method = editData ? 'PUT' : 'POST';
 
     try {
