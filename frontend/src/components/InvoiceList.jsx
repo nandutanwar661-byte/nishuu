@@ -6,7 +6,7 @@ const InvoiceList = ({ onAddNewClick, onEditClick, refreshTrigger }) => {
 
   useEffect(() => {
     // Localhost link ko badal kar live backend API endpoint lagaya hai
-    fetch('https://extraeffort-9i4m.onrender.com/api/invoices/all')
+    fetch('https://nishuu.onrender.com/api/invoices/all')
       .then(res => res.json())
       .then(resData => { if (resData.success) setInvoices(resData.data); })
       .catch(err => console.error(err))
