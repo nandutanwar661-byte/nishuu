@@ -6,7 +6,7 @@ const EstimateDetailsView = ({ onAddNewClick }) => {
 
   useEffect(() => {
     // Localhost ko hata kar Render ki link laga di hai
-    fetch('https://extraeffort-9i4m.onrender.com/api/estimates/all')
+    fetch('https://nishuu.onrender.com/api/estimates/all')
       .then(res => res.json())
       .then(result => { if (result.success) setEstimates(result.data); })
       .catch(err => console.error(err))
