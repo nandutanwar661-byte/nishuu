@@ -58,7 +58,7 @@ const ItemForm = ({ onItemSaved }) => {
 
     try {
       // Yahan localhost link ko badal kar live backend submit route set kiya hai
-      const response = await fetch('https://extraeffort-9i4m.onrender.com/api/items/add', {
+      const response = await fetch('https://nishuu.onrender.com/api/items/add', {
         method: 'POST',
         body: dataToSend
       });
