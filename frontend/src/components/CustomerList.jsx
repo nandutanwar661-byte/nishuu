@@ -7,7 +7,7 @@ const CustomerList = ({ onAddNewCustomerClick, onEditCustomerClick, refreshTrigg
   const fetchCustomers = async () => {
     try {
       // Yahan localhost ko hata kar Render ki link laga di hai
-      const res = await fetch('https://extraeffort-9i4m.onrender.com/api/customers/all');
+      const res = await fetch('https://nishuu.onrender.com/api/customers/all');
       const data = await res.json();
       setCustomers(data);
     } catch (err) {
