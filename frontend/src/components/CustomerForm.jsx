@@ -66,8 +66,8 @@ const CustomerForm = ({ refreshDashboard, editCustomerData, onCancelEdit }) => {
     
     // Yahan localhost ko hata kar Render ki link laga di hai
     const url = isEditing 
-      ? `https://extraeffort-9i4m.onrender.com/api/customers/${editCustomerData._id}`
-      : 'https://extraeffort-9i4m.onrender.com/api/customers/add';
+      ? `https://nishuu.onrender.com/api/customers/${editCustomerData._id}`
+      : 'https://nishuu.onrender.com/api/customers/add';
 
     try {
       const response = await fetch(url, {
