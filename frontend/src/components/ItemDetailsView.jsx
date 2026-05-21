@@ -7,7 +7,7 @@ const ItemDetailsView = ({ onAddNewClick }) => {
   const fetchItems = async () => {
     try {
       // Localhost ko hata kar Render ki live backend link laga di hai
-      const res = await fetch('https://extraeffort-9i4m.onrender.com/api/items/all');
+      const res = await fetch('https://nishuu.onrender.com/api/items/all');
       const result = await res.json();
       if (result.success) {
         setItems(result.data);
