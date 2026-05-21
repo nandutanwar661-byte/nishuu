@@ -25,7 +25,7 @@ const EstimateForm = ({ onEstimateSaved, onCancel }) => {
   // Dropdown list customers data loading
   useEffect(() => {
     // Localhost ko hata kar Render ki link laga di hai
-    fetch('https://extraeffort-9i4m.onrender.com/api/customers/all')
+    fetch('https://nishuu.onrender.com/api/customers/all')
       .then(res => res.json())
       .then(data => setCustomers(data))
       .catch(err => console.error(err));
@@ -89,7 +89,7 @@ const EstimateForm = ({ onEstimateSaved, onCancel }) => {
 
     try {
       // Localhost ko hata kar Render ki link laga di hai
-      const response = await fetch('https://extraeffort-9i4m.onrender.com/api/estimates/add', {
+      const response = await fetch('https://nishuu.onrender.com/api/estimates/add', {
         method: 'POST',
         body: payload
       });
